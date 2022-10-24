@@ -18,7 +18,7 @@ pub fn iter_num(num: i32) -> bool {
     let len = chars.clone().count();     // <-- `chars` moved due to this method call
 
     println!("Len = {:?}", len);
-    // println!("Len = {:?}", chars);
+    println!("Len = {:?}", chars);
     for c in chars {             // <-- ❌ "value used here after move": chars
         println!(">>> {:?}", c);
     }
