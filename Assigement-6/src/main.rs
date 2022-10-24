@@ -17,7 +17,7 @@ fn main() {
 }
 
 fn go(v: &mut Vec<i32>) {
-    for i in v.clone() {
+    for i in v.iter() {
         println!("{}", i);
     }
     v.push(4);
